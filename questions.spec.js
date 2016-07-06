@@ -36,6 +36,12 @@ describe('Les chaines de caractères : ', function () {
         var result = SupprEspaceString(' Rome ne s\'est pas construite en un jour ');
         expect(result).toEqual('Rome ne s\'est pas construite en un jour');
     });
+    
+    it('Supprimer les espaces avant et après la chaine', function () {
+        var result = SupprEspaceString('Rome ne s\'est pas construite en un jour ');
+        expect(result).toEqual('Rome ne s\'est pas construite en un jour');
+    });
+    
     it('Afficher true si le parametre d\'entrée de la fonction est de type string', function () {
         var result = IsString('Est ce une chaine de caractères ?');
         expect(result).toEqual(true);
@@ -48,7 +54,7 @@ describe('Les chaines de caractères : ', function () {
         var result = NombreEspaceString('Sire ouvrez on en a gros!');
         expect(result).toEqual(5);
     });
-    /*********** BONUS 
+    
     it('Inverser une chaine de caractères', function () {
         var result = InverseString('Après demain, à partir d\'aujourd\'hui?');
         expect(result).toEqual('?iuh\'druojua\'d ritrap à ,niamed sèrpA');
@@ -62,7 +68,7 @@ describe('Les chaines de caractères : ', function () {
         expect(result).toEqual(19);
 
     });
-    ******************/
+
 })
 describe('Les nombres et opérations mathématiques : ', function () {
     it('Calculer la puissance d\'un nombre par rapport à un autre (x à la puissance y)', function () {
